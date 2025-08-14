@@ -7,16 +7,24 @@ const items = ref<NavigationMenuItem[]>([
     icon: 'i-simple-icons-github',
     badge: '3.8k',
     to: 'https://github.com/nuxt/ui',
-    target: '_blank'
+    target: '_blank',
   },
   {
     label: 'Help',
     icon: 'i-lucide-circle-help',
-    disabled: true
+    disabled: true,
   }
 ])
 </script>
 
 <template>
-  <UNavigationMenu :items="items" class="w-full justify-center" />
+    <nav class="flex justify-between items-center w-full px-4">
+        <div class="flex items-center gap-2">
+            <i class="bg-accent rounded-full w-4.5 h-4.5"></i>
+            <div class="font-bold text-1xl">Cognivue</div>
+        </div>
+        <UNavigationMenu :items="items" class="w-full justify-end" />
+    </nav>
+
+    <slot></slot>
 </template>

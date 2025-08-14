@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-background min-h-screen text-text">
     <NuxtRouteAnnouncer />
     <NuxtLoadingIndicator />
     <NuxtLayout>

@@ -1,2 +1,37 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+
+@theme {
+  --color-text: #e0f1e0;
+  --color-background: #060b06;
+  --color-primary: #9cd99c;
+  --color-secondary: #178618;
+  --color-accent: #24e727;
+  --color-tertiary: rgb(23 134 24 / 0.5);
+  --color-danger: #ff9999;
+   --color-gradient: linear-gradient(to right, var(--color-accent), var(--color-primary));
+}
+:root {
+ 
+}
+
+.text-gradient {
+  background: var(--color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient {
+  background: var(--color-gradient);
+}
+
+
+
+/* in your app.css or a global css file */
+.text-outline {
+  color: transparent; /* remove normal fill */
+  -webkit-text-stroke: 1px var(--color-text); /* white outline */
+  background: var(--background); /* or gradient */
+  -webkit-background-clip: text;
+  background-clip: text; /* for Firefox */
+}
