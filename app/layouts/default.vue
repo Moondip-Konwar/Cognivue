@@ -18,7 +18,7 @@ const items = ref<NavigationMenuItem[]>([
 </script>
 
 <template>
-    <nav class="flex justify-between items-center w-full px-4">
+    <nav class="flex justify-between items-center w-full px-4 fixed">
         <div class="flex items-center gap-2">
             <i class="bg-accent rounded-full w-4.5 h-4.5"></i>
             <div class="font-bold text-1xl">Cognivue</div>

@@ -11,9 +11,6 @@
   --color-danger: #ff9999;
    --color-gradient: linear-gradient(to right, var(--color-accent), var(--color-primary));
 }
-:root {
- 
-}
 
 .text-gradient {
   background: var(--color-gradient);
@@ -35,3 +32,17 @@
   -webkit-background-clip: text;
   background-clip: text; /* for Firefox */
 }
+
+
+/* Solar System Animations */
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(var(--orbit-radius)) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(var(--orbit-radius)) rotate(-360deg); }
+}
+
+/* Generic planet animation class */
+.planet {
+  animation: orbit var(--orbit-speed) linear infinite;
+  transform-origin: center;
+}
+
