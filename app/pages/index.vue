@@ -149,6 +149,7 @@
     </section>
 
     <!-- About -->
+     <!-- TODO: Add links for each service -->
     <section
         class="flex flex-col md:flex-row px-4 md:px-10 gap-8 md:gap-15 justify-center items-center w-full calc(100vh - 4rem) md:min-h-screen">
         <!-- Title -->

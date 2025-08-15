@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
 
+// TODO: Complete the navigation menu items (Add links, items, etc.)
 const items = ref<NavigationMenuItem[]>([
   {
     label: 'GitHub',
