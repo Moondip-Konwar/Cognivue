@@ -8,8 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d .output/public"
-  },
+	"deploy": "nuxt generate && gh-pages -d .output/public"
+      },
   "dependencies": {
     "@iconify-json/material-symbols": "^1.2.32",
     "@nuxt/ui": "^3.3.0",
