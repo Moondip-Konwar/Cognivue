@@ -1,5 +1,6 @@
 <template>
     <!-- Hero -->
+    <!-- TODO: Componentify the Section, title and art tags -->
     <section
         class="flex flex-col md:flex-row md:mb-0 mb-10 m px-4 md:px-10 gap-8 md:gap-15 justify-center items-center w-full calc(100vh - 4rem) md:min-h-screen">
         <!-- Title -->
@@ -20,6 +21,7 @@
 
         <!-- Art -->
         <div class="flex-1 flex flex-col justify-center items-center gap-3 w-full">
+            <!-- TODO: Componentify the cards -->
             <div class="flex flex-row gap-2 md:gap-3 w-full justify-center">
                 <div
                     class="bg-secondary h-16 md:h-35 w-12 md:w-30 rounded-2xl hover:scale-110 transition-all duration-250 hover:shadow-[0_0_15px_var(--color-tertiary)]">
@@ -90,6 +92,8 @@
                             <UIcon name="material-symbols:star" class="text-white text-2xl animate-spin-slow"></UIcon>
                         </div>
                     </div>
+
+                    <!-- TODO: Componentify the Planets -->
 
                     <!-- Planet 1 -->
                     <div class="absolute flex justify-center items-center"
@@ -167,6 +171,7 @@
         <!-- Credits -->
         <div class="flex-1 flex flex-col justify-center items-center gap-3 w-full">
             <ul class="space-y-4 w-full max-w-md mx-auto">
+                <!-- TODO: Componentify the <li> items -->
                 <li class="flex items-center text-xl md:text-2xl font-light">
                     <span class="inline-flex items-center justify-center rounded-full bg-secondary w-8 h-8 mr-3 shrink-0">
                         <UIcon name="material-symbols:person" class="size-6 text-white"></UIcon>
