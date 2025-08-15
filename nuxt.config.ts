@@ -10,5 +10,8 @@ export default defineNuxtConfig({
     colors: {
       
     }
-  }
+  },
+  app: {
+      baseURL: '/Cognivue/' // Important for GH Pages routing
+    }
 });
