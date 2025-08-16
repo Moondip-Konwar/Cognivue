@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-  const router = useRouter();
-  router.push('/quiz/selection');
 </script>
 
 <template>
