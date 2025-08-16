@@ -123,7 +123,7 @@
     </section>
 
     <!-- About -->
-     <!-- TODO: Add links for each service -->
+    <!-- TODO: Add links for each service -->
     <section
         class="flex flex-col md:flex-row px-4 md:px-10 gap-8 md:gap-15 justify-center items-center w-full calc(100vh - 4rem) md:min-h-screen">
         <!-- Title -->
@@ -146,7 +146,7 @@
         <!-- Credits -->
         <div class="flex-1 flex flex-col justify-center items-center gap-3 w-full">
             <ul class="space-y-4 w-full max-w-md mx-auto">
-                <WelcomeCredits icon="material-symbols:person" title="Created By:" content="some_useless_person" /> 
+                <WelcomeCredits icon="material-symbols:person" title="Created By:" content="some_useless_person" />
                 <WelcomeCredits icon="material-symbols:design" title="Designed By:" content="mrNoob" />
                 <WelcomeCredits icon="simple-icons:vuedotjs" title="Built with:" content="Vue" />
                 <WelcomeCredits icon="simple-icons:nuxt" title="Powered with:" content="Nuxt" />
@@ -163,7 +163,7 @@
     </section>
 
     <footer class="text-text text-center mt-10 font-light pb-2 border-t-1 border-tertiary">
-    <p>© 2025 some_useless_person. All rights reserved.</p>
-  </footer>
+        <p>© 2025 some_useless_person. All rights reserved.</p>
+    </footer>
 
 </template>
