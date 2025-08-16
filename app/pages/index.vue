@@ -20,7 +20,6 @@
 
         <!-- Art -->
         <div class="flex-1 flex flex-col justify-center items-center gap-3 w-full">
-            <!-- TODO: Componentify the cards -->
             <div class="flex flex-row gap-2 md:gap-3 w-full justify-center">
                 <WelcomeInteractiveCards color="secondary"></WelcomeInteractiveCards>
                 <WelcomeInteractiveCards color="accent"></WelcomeInteractiveCards>
@@ -147,95 +146,17 @@
         <!-- Credits -->
         <div class="flex-1 flex flex-col justify-center items-center gap-3 w-full">
             <ul class="space-y-4 w-full max-w-md mx-auto">
-                <!-- TODO: Componentify the <li> items -->
-                <li class="flex items-center text-xl md:text-2xl font-light">
-                    <span class="inline-flex items-center justify-center rounded-full bg-secondary w-8 h-8 mr-3 shrink-0">
-                        <UIcon name="material-symbols:person" class="size-6 text-white"></UIcon>
-                    </span>
-                    <span>
-                        <span class="font-bold text-gradient">Created By:</span> some_useless_person
-                    </span>
-                </li>
-                <li class="flex items-center text-xl md:text-2xl font-light">
-                    <span class="inline-flex items-center justify-center rounded-full bg-secondary w-8 h-8 mr-3 shrink-0">
-                        <UIcon name="material-symbols:design-services" class="size-6 text-white"></UIcon>
-                    </span>
-                    <span>
-                        <span class="font-bold text-gradient">Designed By:</span> mrNoob
-                    </span>
-                </li>
-                <li class="flex items-center text-xl md:text-2xl font-light">
-                    <span class="inline-flex items-center justify-center rounded-full bg-secondary w-8 h-8 mr-3 shrink-0">
-                        <UIcon name="simple-icons:vuedotjs" class="size-6 text-white"></UIcon>
-                    </span>
-                    <span>
-                        <span class="font-bold text-gradient">Built with:</span> Vue.js
-                    </span>
-                </li>
-                <li class="flex items-center text-xl md:text-2xl font-light">
-                    <span class="inline-flex items-center justify-center rounded-full bg-secondary w-8 h-8 mr-3 shrink-0">
-                        <UIcon name="simple-icons:nuxt" class="size-6 text-white"></UIcon>
-                    </span>
-                    <span>
-                        <span class="font-bold text-gradient">Powered with:</span> Nuxt
-                    </span>
-                </li>
-                <li class="flex items-center text-xl md:text-2xl font-light">
-                    <span class="inline-flex items-center justify-center rounded-full bg-secondary w-8 h-8 mr-3 shrink-0">
-                        <UIcon name="simple-icons:figma" class="size-6 text-white"></UIcon>
-                    </span>
-                    <span>
-                        <span class="font-bold text-gradient">Prototyped on:</span> Figma
-                    </span>
-                </li>
-                <li class="flex items-center text-xl md:text-2xl font-light">
-                    <span class="inline-flex items-center justify-center rounded-full bg-secondary w-8 h-8 mr-3 shrink-0">
-                        <UIcon name="simple-icons:tailwindcss" class="size-6 text-white"></UIcon>
-                    </span>
-                    <span>
-                        <span class="font-bold text-gradient">Designed using:</span> Tailwind CSS
-                    </span>
-                </li>
-                <li class="flex items-center text-xl md:text-2xl font-light">
-                    <span class="inline-flex items-center justify-center rounded-full bg-secondary w-8 h-8 mr-3 shrink-0">
-                        <UIcon name="simple-icons:nuxt" class="size-6 text-white"></UIcon>
-                    </span>
-                    <span>
-                        <span class="font-bold text-gradient">Styled with:</span> NuxtUI
-                    </span>
-                </li>
-                <li class="flex items-center text-xl md:text-2xl font-light">
-                    <span class="inline-flex items-center justify-center rounded-full bg-secondary w-8 h-8 mr-3 shrink-0">
-                        <UIcon name="simple-icons:nodedotjs" class="size-6 text-white"></UIcon>
-                    </span>
-                    <span>
-                        <span class="font-bold text-gradient">Backend with:</span> NodeJs
-                    </span>
-                </li>
-                <li class="flex items-center text-xl md:text-2xl font-light">
-                    <span class="inline-flex items-center justify-center rounded-full bg-secondary w-8 h-8 mr-3 shrink-0">
-                        <UIcon name="simple-icons:iconify" class="size-6 text-white"></UIcon>
-                    </span>
-                    <span>
-                        <span class="font-bold text-gradient">Icons from:</span> Iconify
-                    </span>
-                </li>
-                <li class="flex items-center text-xl md:text-2xl font-light">
-                    <span class="inline-flex items-center justify-center rounded-full bg-secondary w-8 h-8 mr-3 shrink-0">
-                        <UIcon name="simple-icons:github" class="size-6 text-white"></UIcon>
-                    </span>
-                    <span>
-                        <span class="font-bold text-gradient">Hosted on:</span> Github
-                    </span>
-                </li>
-                <li class="flex items-center text-xl md:text-2xl font-light">
-                    <span class="inline-flex items-center justify-center rounded-full bg-secondary w-8 h-8 mr-3 shrink-0">
-                        <UIcon name="simple-icons:netlify" class="size-6 text-white"></UIcon>
-                    </span>
-                    <span>
-                        <span class="font-bold text-gradient">Deployed with:</span> Netlify
-                    </span>
-                </li>
+                <WelcomeCredits icon="material-symbols:person" title="Created By:" content="some_useless_person" /> 
+                <WelcomeCredits icon="material-symbols:design" title="Designed By:" content="mrNoob" />
+                <WelcomeCredits icon="simple-icons:vuedotjs" title="Built with:" content="Vue" />
+                <WelcomeCredits icon="simple-icons:nuxt" title="Powered with:" content="Nuxt" />
+                <WelcomeCredits icon="simple-icons:figma" title="Prototyped on:" content="Figma" />
+                <WelcomeCredits icon="simple-icons:tailwindcss" title="Designed using:" content="Tailwind" />
+                <WelcomeCredits icon="simple-icons:nuxt" title="Styled with:" content="NuxtUI" />
+                <WelcomeCredits icon="simple-icons:nodedotjs" title="Backend with:" content="NodeJs" />
+                <WelcomeCredits icon="simple-icons:iconify" title="Icons from:" content="Iconify" />
+                <WelcomeCredits icon="simple-icons:github" title="Hosted on:" content="Github" />
+                <WelcomeCredits icon="simple-icons:netlify" title="Deployed with:" content="Netlify" />
             </ul>
         </div>
 
