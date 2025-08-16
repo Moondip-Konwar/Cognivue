@@ -1,6 +1,5 @@
 <template>
     <!-- Hero -->
-    <!-- TODO: Componentify the Section, title and art tags -->
     <section
         class="flex flex-col md:flex-row md:mb-0 mb-10 m px-4 md:px-10 gap-8 md:gap-15 justify-center items-center w-full calc(100vh - 4rem) md:min-h-screen">
         <!-- Title -->
@@ -23,46 +22,22 @@
         <div class="flex-1 flex flex-col justify-center items-center gap-3 w-full">
             <!-- TODO: Componentify the cards -->
             <div class="flex flex-row gap-2 md:gap-3 w-full justify-center">
-                <div
-                    class="bg-secondary h-16 md:h-35 w-12 md:w-30 rounded-2xl hover:scale-110 transition-all duration-250 hover:shadow-[0_0_15px_var(--color-tertiary)]">
-                </div>
-                <div
-                    class="bg-accent h-16 md:h-35 w-12 md:w-30 rounded-2xl hover:scale-110 transition-all duration-250 hover:shadow-[0_0_15px_var(--color-tertiary)]">
-                </div>
-                <div
-                    class="bg-secondary h-16 md:h-35 w-12 md:w-30 rounded-2xl hover:scale-110 transition-all duration-250 hover:shadow-[0_0_15px_var(--color-tertiary)]">
-                </div>
-                <div
-                    class="bg-tertiary h-16 md:h-35 w-12 md:w-30 rounded-2xl hover:scale-110 transition-all duration-250 hover:shadow-[0_0_15px_var(--color-tertiary)]">
-                </div>
+                <WelcomeInteractiveCards color="secondary"></WelcomeInteractiveCards>
+                <WelcomeInteractiveCards color="accent"></WelcomeInteractiveCards>
+                <WelcomeInteractiveCards color="secondary"></WelcomeInteractiveCards>
+                <WelcomeInteractiveCards color="tertiary"></WelcomeInteractiveCards>
             </div>
             <div class="flex flex-row gap-2 md:gap-3 w-full justify-center">
-                <div
-                    class="bg-secondary h-16 md:h-35 w-12 md:w-30 rounded-2xl hover:scale-110 transition-all duration-250 hover:shadow-[0_0_15px_var(--color-tertiary)]">
-                </div>
-                <div
-                    class="bg-accent h-16 md:h-35 w-12 md:w-30 rounded-2xl hover:scale-110 transition-all duration-250 hover:shadow-[0_0_15px_var(--color-tertiary)]">
-                </div>
-                <div
-                    class="bg-secondary h-16 md:h-35 w-12 md:w-30 rounded-2xl hover:scale-110 transition-all duration-250 hover:shadow-[0_0_15px_var(--color-tertiary)]">
-                </div>
-                <div
-                    class="bg-primary h-16 md:h-35 w-12 md:w-30 rounded-2xl hover:scale-110 transition-all duration-250 hover:shadow-[0_0_15px_var(--color-tertiary)]">
-                </div>
+                <WelcomeInteractiveCards color="secondary"></WelcomeInteractiveCards>
+                <WelcomeInteractiveCards color="accent"></WelcomeInteractiveCards>
+                <WelcomeInteractiveCards color="secondary"></WelcomeInteractiveCards>
+                <WelcomeInteractiveCards color="primary"></WelcomeInteractiveCards>
             </div>
             <div class="flex flex-row gap-2 md:gap-3 w-full justify-center">
-                <div
-                    class="bg-secondary h-16 md:h-35 w-12 md:w-30 rounded-2xl hover:scale-110 transition-all duration-250 hover:shadow-[0_0_15px_var(--color-tertiary)]">
-                </div>
-                <div
-                    class="bg-tertiary h-16 md:h-35 w-12 md:w-30 rounded-2xl hover:scale-110 transition-all duration-250 hover:shadow-[0_0_15px_var(--color-tertiary)]">
-                </div>
-                <div
-                    class="bg-secondary h-16 md:h-35 w-12 md:w-30 rounded-2xl hover:scale-110 transition-all duration-250 hover:shadow-[0_0_15px_var(--color-tertiary)]">
-                </div>
-                <div
-                    class="bg-primary h-16 md:h-35 w-12 md:w-30 rounded-2xl hover:scale-110 transition-all duration-250 hover:shadow-[0_0_15px_var(--color-tertiary)]">
-                </div>
+                <WelcomeInteractiveCards color="secondary"></WelcomeInteractiveCards>
+                <WelcomeInteractiveCards color="tertiary"></WelcomeInteractiveCards>
+                <WelcomeInteractiveCards color="secondary"></WelcomeInteractiveCards>
+                <WelcomeInteractiveCards color="primary"></WelcomeInteractiveCards>
             </div>
         </div>
 

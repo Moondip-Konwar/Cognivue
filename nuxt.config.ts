@@ -13,5 +13,8 @@ export default defineNuxtConfig({
   },
   app: {
       baseURL: '/Cognivue/' // Important for GH Pages routing
-    }
+    },
+    nitro: {
+        preset: 'github-pages'
+      }
 });

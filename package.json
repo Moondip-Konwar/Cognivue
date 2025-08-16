@@ -8,10 +8,11 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-	"deploy": "nuxt generate && gh-pages -d .output/public"
-      },
+    "deploy": "gh-pages -d .output/public"
+  },
   "dependencies": {
     "@iconify-json/material-symbols": "^1.2.32",
+    "@iconify-json/simple-icons": "^1.2.47",
     "@nuxt/ui": "^3.3.0",
     "@tailwindcss/vite": "^4.1.11",
     "nuxt": "^4.0.3",
