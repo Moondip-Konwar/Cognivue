@@ -4,16 +4,25 @@ import type { NavigationMenuItem } from '@nuxt/ui'
 // TODO: Complete the navigation menu items (Add links, items, etc.)
 const items = ref<NavigationMenuItem[]>([
   {
-    label: 'GitHub',
-    icon: 'i-simple-icons-github',
-    badge: '3.8k',
-    to: 'https://github.com/nuxt/ui',
-    target: '_blank',
+    label: 'Home',
+    icon: 'i-lucide-home',
+    to: '/',
   },
   {
-    label: 'Help',
-    icon: 'i-lucide-circle-help',
-    disabled: true,
+    label: 'Quiz Selection',
+    icon: 'i-lucide-list',
+    to: '/quiz/selection',
+  },
+  {
+    label: 'About',
+    icon: 'i-lucide-info',
+    to: '/about',
+  },
+  {
+    label: 'GitHub',
+    icon: 'i-simple-icons-github',
+    to: 'https://github.com/Moondip-Konwar/Cognivue/',
+    target: '_blank',
   }
 ])
 </script>
